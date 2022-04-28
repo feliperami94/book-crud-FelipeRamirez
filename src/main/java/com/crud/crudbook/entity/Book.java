@@ -1,7 +1,6 @@
 package com.crud.crudbook.entity;
 
 import lombok.Data;
-import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 
