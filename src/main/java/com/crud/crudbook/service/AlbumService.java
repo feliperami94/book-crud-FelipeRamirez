@@ -26,7 +26,11 @@ public class AlbumService implements AlbumServiceInterface {
 
     @Override
     public SpotifyAlbum updateAlbum(SpotifyAlbum album) {
-        return albumRepository.save(album);
+        if (albumRepository.existsById(album.getId())){
+            return albumRepository.save(album);
+        }
+        return null;
+
     }
 
     @Override
