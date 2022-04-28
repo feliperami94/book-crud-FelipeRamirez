@@ -4,10 +4,11 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity(name = "Spotify")
+@Entity(name = "SpotifyAlbums")
 @Table(name = "spotifyCatalogue")
 @Data
 public class SpotifyAlbum {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
